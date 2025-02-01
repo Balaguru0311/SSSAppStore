@@ -1,16 +1,14 @@
-import React from 'react';
-import './App.css'
+// src/App.jsx  
+import React from 'react';  
+import ProductList from './components/ProductList';  
 
-function App() {
+const App = () => {  
+  return (  
+    <div className="container mx-auto p-4">  
+      <h1 className="text-2xl font-bold mb-4 text-center">Product List</h1>  
+      <ProductList />  
+    </div>  
+  );  
+};  
 
-
-  return (
-    <>
-      <div>
-        <h1>App Store</h1>
-      </div>
-    </>
-  )
-}
-
-export default App
+export default App;
