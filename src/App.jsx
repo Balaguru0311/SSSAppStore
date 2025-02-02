@@ -40,7 +40,7 @@ const App = () => {
       <h3>Cart: {cartItems.length}</h3>
       </div>
       <Routes>  
-        <Route path="/" element={<ProductList addToCart={addToCart} />} />  
+        <Route path="/SSSAppStore" element={<ProductList addToCart={addToCart} />} />  
         <Route  
           path="/cart"  
           element={<CartPage cartItems={cartItems} updateQuantity={updateQuantity} removeFromCart={removeFromCart} />}  

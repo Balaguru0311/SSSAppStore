@@ -6,7 +6,7 @@ const CartPage = ({ cartItems, updateQuantity,removeFromCart }) => {
   if (cartItems?.length === 0) {  
     return (
     <div>
-        <Link to="/" className='links'>Go to Products</Link>
+        <Link to="/SSSAppStore" className='links'>Go to Products</Link>
         <h3>Your cart is empty.</h3>
     </div>
     )        
@@ -14,7 +14,7 @@ const CartPage = ({ cartItems, updateQuantity,removeFromCart }) => {
 
   return (  
     <div>  
-      <Link to="/" className='links'>Go to Products</Link>
+      <Link to="/SSSAppStore" className='links'>Go to Products</Link>
       <h1 className='text-4xl mb-3'>Your Cart</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">  
         {cartItems.map((product) => (  
