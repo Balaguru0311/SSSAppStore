@@ -7,10 +7,9 @@ const CartPage = () => {
   if (cartItems?.length === 0) {
     return (
       <div>
-        <div className="cart-emp">
-        <h3 className="text-4xl text-[#0a192f]">Your cart is empty.</h3>
+        <div>
+        <h3 className="text-4xl text-[#0a192f] mt-[100px]">Your cart is empty.</h3>
         </div>
-        
       </div>
     );
   }

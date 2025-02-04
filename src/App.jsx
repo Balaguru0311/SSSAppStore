@@ -20,7 +20,7 @@ const App = () => {
     <Header />
       <Routes>  
         <Route path="/SSSAppStore" element={<ProductList />} />  
-        <Route path="/cart"  element={<CartPage />}  />  
+        <Route path="/SSSAppStore/cart"  element={<CartPage />}  />  
       </Routes>  
       <div className='footer'>
         <p>@SSS Emart - All rights reserved 2025</p>

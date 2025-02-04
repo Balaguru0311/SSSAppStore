@@ -35,7 +35,7 @@ const Header = () => {
       )}  
 
       <div>  
-        <Link to="/cart" className="relative flex items-center">  
+        <Link to="/SSSAppStore/cart" className="relative flex items-center">  
           <h2 className='text-[#fff]'>Cart : </h2>
           <svg   
             xmlns="http://www.w3.org/2000/svg"   

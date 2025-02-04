@@ -13,14 +13,14 @@ const ProductList = () => {
 
   useEffect(() => {  
     const fetchProducts = async () => {  
-      try {  
-        const response = await axios.get('https://fakestoreapi.com/products');  
-        setProducts(response.data);  
-      } catch (err) {  
-        setError('Error fetching products:',err);  
-      } finally {  
-        setLoading(false);  
-      }  
+        try {
+          const response = await axios.get('https://fakestoreapi.com/products');    
+          setProducts(response.data);  
+        } catch (err) {  
+          setError('Error fetching products:',err);  
+        } finally {  
+          setLoading(false);  
+        }
     };  
     fetchProducts();  
   }, []);  
@@ -31,7 +31,7 @@ const ProductList = () => {
 
   
   
-  if (loading) return <div className="spinner">Loading...</div>;  
+  if (loading) return <div className="spinner text-4xl text-[#0a192f] mt-[100px]">Loading...</div>;  
   if (error) return <div className="error">{error}</div>;  
 
   return (  
